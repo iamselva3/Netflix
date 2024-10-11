@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  margin-left: 80vh;
+
+}
+.form-switch{
+ width: 150px;
+ margin-top: 150px;
+ margin-left: 100px;
+ font-size: 20px;
+ color: red;
+}
+
+.form-select{
+  background-color: black;
+  color: white;
+  width: 200px;
+  margin-top: -90vh;
+  margin-left: 10px;
+}
+h1 {
+  margin-bottom: 20px;
+}
+
+input[type=email],
+input[type=password] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #222;
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #e50914;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e50914;
+}
+
+.signup-link {
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+}
