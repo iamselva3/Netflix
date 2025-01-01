@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="icon" type="image/x-icon" href="./images/nnn.png">
+    <link rel="icon" type="image/x-icon" href="./images/nnn.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <style>
+    h1{
+        color:red ;
+        text-align: center;
+    }
+
+    .para2{
+        color: white;
+        font-size: 20px;
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+
+    .btn-primary{
+        margin-left: 500px;
+        margin-top: -80px;
+    }
+
+    #p2{
+        color: white;
+        margin-left: 700px;
+        margin-top: -65px;
+    }
+
+    /* #pd1{
+        margin-left: 200px;
+        margin-top: 200px;
+        display: flex;
+    } */
+
+    #div2{
+        margin-top: 100px;
+        color: white;
+        margin-left: 40px;
+        font-size: 18px;
+    }
+
+    #p3{
+        color: white;
+        margin-left: 650px;
+        margin-top: -65px;
+    }
+
+    #btn1{
+        margin-left: 460px;
+    }
+
+    #hr1{
+        border: 6px solid red;
+        margin-top: 70px;
+        margin-left: -70px;
+    }
+
+    #img1{
+        margin-top: -50px;
+        margin-left: 400px;
+        width: 600px;
+        height: 500px;
+    }
+
+ </style>
+</head>
+
+<body class="bg-black">
+    <div id="div1">
+        <!-- <p id="p2"></p> -->
+    </div>
+
+    <div id="div2">
+
+    </div>
+</body>
+<script>
+
+
+    function datetime(){
+        let d=new Date("2020-12-2");
+        document.getElementById('p2').innerHTML=d;
+    }
+    let parent=document.getElementById("div1");
+       
+       let para1=document.createElement("h1");
+       para1.textContent="Pending Notifications";
+       parent.appendChild(para1);
+
+       let par2=document.createElement("p");
+       par2.textContent="1. You have 2 pending payments";
+       par2.className="para2";
+       parent.appendChild(par2);
+
+       let g=document.createElement("button");
+       g.textContent="View deatails";
+       g.id="btn";
+       g.className="btn btn-primary";
+       parent.appendChild(g);
+
+       let para3=document.createElement("p");
+       para3.id="p2";
+       para3.textContent="";
+       parent.appendChild(para3);
+
+       //onclick indicate the function datetime()
+       g.onclick=datetime;
+
+
+
+    //Second Notification
+    function datime(){
+        let e=new Date();
+        document.getElementById('p3').innerHTML=e;
+    }
+    let parent1=document.getElementById("div2");
+       
+       let par3=document.createElement("p");
+       par3.textContent="2. You have 5 days left for 5/12/2020";
+       let lineBreak = document.createElement("br");
+par3.appendChild(lineBreak);
+
+// Add the second part of the text
+par3.appendChild(document.createTextNode("   For your Next recharge"));
+
+       par3.className="para3";
+       parent1.appendChild(par3);
+
+       let g1=document.createElement("button"); //Create a button
+       g1.textContent="View deatails";
+       g1.id="btn1";
+       g1.className="btn btn-primary";
+       parent1.appendChild(g1);
+
+       let para4=document.createElement("p"); //create a paragraph
+       para4.id="p3";
+       parent1.appendChild(para4);
+
+       g1.onclick=datime;
+
+       let c=document.createElement("hr"); //Create a single horizontal line
+       c.id="hr1";
+       parent1.appendChild(c);
+
+       let k=document.createElement("img");
+       k.src="vjj.gif";
+       k.id="img1";
+       parent1.appendChild(k);
+</script>
+</html>

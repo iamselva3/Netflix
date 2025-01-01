@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="./images/nnn.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="main.js"></script>
 </head>
 <style>
     .carousel-caption{
@@ -26,9 +27,12 @@
 .corousel-inner{
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.btn-group{
+    margin-top: 10px;
+}
 </style>
 <!-- body style set as black -->
-<body class="bg-black">
+<body class="bg-black" id="form2">
     <!-- nav used for user can easily navigate any other pages this is for header -->
     <nav class="navbar navbar-expand-sm bg-black fixed-top">
         <div class="container-fluid">
@@ -37,7 +41,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
             </a>
             <form class="d-flex" style="margin-left: 400px;">
                 <!-- Search element used as input type -->
-                <input class="form-control me-3" type="search" placeholder="Search for Movies">
+                <input class="form-control me-3" type="text"  id="search" onchange="up()" placeholder="Search for Movies">
                 <button class="btn btn-outline-danger" type="submit">Search</button>
             </form>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav1">
@@ -72,28 +76,28 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
                         <!-- This is the active image when you open the page -->
                     <div class="carousel-item active">
                         <img src="./images/Leo.png"  class="img-fluid w-50">
-                        <div class="carousel-caption d-none d-md-block" style="bottom:-33%";>
+                        <div class="carousel-caption d-none d-md-block" style="bottom:-40%";>
                             <h5>Leo(2024)</h5>
                             <p>Parthiban is a mild-mannered cafe owner in Kashmir, who fends off a gang of murderous thugs and gains attention from a drug cartel claiming he was once a part of them.</p>
                           </div>
                     </div>
                     <div class="carousel-item">
                         <img src="./images/master.png" class="w-50">
-                        <div class="carousel-caption d-none d-md-block" style="bottom:-30%";>
+                        <div class="carousel-caption d-none d-md-block" style="bottom:-40%";>
                             <h5>Master (2021)</h5>
                             <p>An alcoholic professor is sent to a juvenile school, where he clashes with a gangster who uses the school children for criminal activities.</p>
                           </div>
                     </div>
                     <div class="carousel-item">
                         <img src="./images/Screenshot 2024-10-06 075125.png" class="w-50">
-                        <div class="carousel-caption d-none d-md-block" style="bottom:-33%";>
+                        <div class="carousel-caption d-none d-md-block" style="bottom:-45%";>
                             <h5>The Greatest of All time (2024)</h5>
                             <p>Gandhi is a hostage negotiator, field agent, and spy working for the Special Anti-Terrorist Squad (SATS). After years of service, he is called back for a critical mission that sets him on a dangerous collision course with his own past.</p>
                           </div>
                     </div>
                     <div class="carousel-item">
                         <img src="./images/Kathi.png" class="w-50">
-                        <div class="carousel-caption d-none d-md-block" style="bottom:-33%";>
+                        <div class="carousel-caption d-none d-md-block" style="bottom:-40%";>
                             <h5>Kathi (2014)</h5>
                             <p>A case of mistaken identity embroils an escaped convict in a fight against a large corporation intent on seizing a village's land.</p>
                           </div>
@@ -196,7 +200,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
                                     </tr>
                                     <tr>
                                         <td >The Night Agent: Season 1</td>
-                                        <td>1,031,100,000	8:55</td>
+                                        <td>1,031,100,000	8:55</td>   
                                         <td>115,600,000</td>
                                     </tr>
                                         </table>
@@ -257,11 +261,15 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
                                  </div>
                                  <center>
                                     <!-- This is button group class cant able to spilt the buttons -->
-                                 <div class="btn-group">
+                                 <!-- <div class="btn-group">
                                     <p class="text-white">Available Qualities on Netflix       </p>
                                     <button type="button" class="btn btn-primary">720P</button>
                                     <button type="button" class="btn btn-primary">2K</button>
                                     <button type="button" class="btn btn-primary">4K</button>
+                                  </div> -->
+
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-danger" onclick="bu272()">GREETINGS</button>
                                   </div>
                                 </center>
                             <hr style="border: 2px solid grey;">
@@ -303,6 +311,8 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
                                     <li class="page-item"><a class="page-link link-dark bg-danger" href="./login.html">Login</a></li>
                                     <li class="page-item"><a class="page-link link-dark bg-danger" href="./signup.html">Sign Up</a></li>
                                     <li class="page-item"><a class="page-link link-dark bg-danger" href="./payment.html">Payment</a></li>
+                                    <li class="page-item"><a class="page-link link-dark bg-danger" href="./users.html">Users</a></li>
+
                                 </ul>
                             </center>
                             </div>

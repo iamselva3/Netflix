@@ -11,21 +11,43 @@
    </head>
    <!-- Link to your CSS file -->
 </head>
+
+<script src="./signup.js">
+</script>
 <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time program</title>
+    <script>
+        function datetime(){
+    document.getElementById('p1').innerHTML=Date();
+}
+    </script>
+</head>
+<body>
+    <!-- <button onclick="datetime()">Display time</button>
+    <p id="p1"></p>  -->
+</body>
+</html>
     <div class="container">
         <h1>Sign Up for Netflix</h1>
         <form action="#">
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
+            <input type="text" placeholder="Full Name" id="name" required>
+            <input type="email" placeholder="Email" id="email" required>
+            <input type="password" placeholder="Password" id="password" required>
             <input type="checkbox" class="form-check-input" checked name="r">Premium
                 <input type="checkbox" class="form-check-input" name="r">Platinum
                 <input type="checkbox" class="form-check-input" name="r">Golden <br><br>
-                <button type="button" class="btn btn-primary btn-lg">Sign Up</button>
-        </form>
+                <button type="button" class="btn btn-primary btn-lg"  onclick="validateform()">Sign Up</button>
+                <p id="errormessages" style="color: red;"></p>
+            </form>
         
         <a href="login.html" class="login-link">Already have an account? Log in here.</a>
     </div>
+
     
 </body>
 </html>
